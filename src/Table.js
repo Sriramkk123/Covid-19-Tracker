@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import "./Table.css";
 import numeral from 'numeral';
 function Table({countries}) {
     return (
-        <Fragment>
+        <div className = "table">
             {countries.map((country) =>(
                     <tr key = {country.country}>
                         <td>{country.country}</td>
@@ -12,7 +12,7 @@ function Table({countries}) {
                         </td>
                     </tr>
             ))}
-        </Fragment>
+        </div >
     );
 }
 
